@@ -85,3 +85,6 @@ cd models && jupyter notebook experiments.ipynb                   # n-gram runs 
 
 ## Academic integrity
 This is graded coursework, shared as a portfolio project. It was carried out as a team; this repository does not claim the model code as individual work.
+
+## License
+The code in this repository is released under the [MIT License](LICENSE) (copyright the project team). Datasets, pretrained weights and third-party material keep their own licences and terms of use; they are not covered by this licence.
