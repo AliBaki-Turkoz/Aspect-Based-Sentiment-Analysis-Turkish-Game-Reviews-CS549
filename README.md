@@ -3,9 +3,7 @@
 | | |
 |---|---|
 | **Course** | CS549 – Natural Language Processing, Özyeğin University (M.Sc. Computer Engineering), Spring 2025 · Instructor: Olcay Taner Yıldız |
-| **Type** | Team project · repository maintained by Ali Baki Türköz |
-| **My part** | Data collection (Steam scraping), cleaning and filtering, keyword-/rule-based aspect labeling, manual annotation, literature review |
-| **Team member's part** | Model training and evaluation (`models/`: BERT and n-gram baseline). It is included so that the pipeline is complete. |
+| **Type** | Team project (see [Team & contributions](#team--contributions)) · repository maintained by Ali Baki Türköz |
 
 ## Problem
 Game reviews often mix opinions, for example *"Grafikler güzel ama yapay zekâ kötü."* ("The graphics are nice but the AI is bad."). The project assigns a sentiment to each **game aspect** separately. Each aspect gets **Olumlu / Nötr / Olumsuz** (positive / neutral / negative), and each review also gets an overall sentiment (*Genel Duygu*).
@@ -82,6 +80,17 @@ cd models && jupyter notebook experiments.ipynb                   # n-gram runs 
 - **Regenerated input file:** `Games_Rewievs_Dataset_Excel.xlsx` (input of the annotation scripts) was rebuilt from `reviews.csv` (`app_id`, `review_text`), because the original contained raw rows with Steam IDs.
 - **Steam ID collection still in the code:** the scraping code can still collect Steam IDs when you run it. Do not publish them.
 - **Content warning:** the review texts are user-generated and contain profanity.
+
+## Team & contributions
+| Member | Contribution |
+|---|---|
+| Ali Baki Türköz | Literature review (lead); manual annotation; feature-based (aspect) labeling and filtering code, including the annotation and profanity/foreign-word cleaning scripts; paper writing (lead, all sections) |
+| Emre Öztürk | Literature review (lead); manual annotation; feature-based labeling and filtering code; paper writing (lead, all sections) |
+| Demba Sow | Coding lead: Steam scraping, model training and testing, feature-based labeling and filtering code (incl. Zemberek integration); manual annotation; paper writing (findings, discussion, conclusion) |
+
+(lead) marks the lead contributor for a task.
+
+Source: "Contributors and Their Roles" slide of the final presentation and the commit history of the team's original repository.
 
 ## Academic integrity
 This is graded coursework, shared as a portfolio project. It was carried out as a team; this repository does not claim the model code as individual work.
